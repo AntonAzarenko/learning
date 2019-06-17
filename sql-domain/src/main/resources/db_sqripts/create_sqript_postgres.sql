@@ -23,7 +23,7 @@ CREATE TABLE contacts (
 -- id - unique identification
 -- title -  name of any product.
 -- price - price of any product
-CREATE TABLE mebel (
+CREATE TABLE furniture (
   id    BIGSERIAL   NOT NULL PRIMARY KEY,
   title  VARCHAR(45) NOT NULL,
   price DECIMAL     NOT NULL
@@ -33,10 +33,10 @@ CREATE TABLE mebel (
 -- Table contains mebel_type and 'mebel_id' referrences to mobel 'id'
 -- ------------------------------------------------------------------
 --FIELDS
-CREATE TABLE mebel_type (
-  mebel_id INT NOT NULL,
+CREATE TABLE furniture_type (
+  furniture_id INT NOT NULL,
   type     VARCHAR(255),
-  CONSTRAINT fk_mebel_type FOREIGN KEY (mebel_id) REFERENCES mebel (id)
+  CONSTRAINT fk_mebel_type FOREIGN KEY (furniture_id) REFERENCES furniture (id)
 );
 
 -- Table contains information about vendors also references to contacts
@@ -56,13 +56,13 @@ CREATE TABLE maker (
 );
 
 -- Table contains demensions information for each product.
-CREATE TABLE dementions (
+CREATE TABLE dimentions (
   id        BIGSERIAL NOT NULL PRIMARY KEY,
   height    DOUBLE PRECISION,
   width     DOUBLE PRECISION,
   thickness DOUBLE PRECISION,
-  mebel_id  INT,
-  CONSTRAINT fk_demensions_mebel FOREIGN KEY (mebel_id) REFERENCES mebel (id)
+  furniture_id  INT,
+  CONSTRAINT fk_demensions_mebel FOREIGN KEY (furniture_id) REFERENCES furniture (id)
 );
 
 CREATE TABLE vendor_has_makers (
@@ -73,8 +73,17 @@ CREATE TABLE vendor_has_makers (
 );
 
 CREATE TABLE maker_has_mebel (
-  medel_id INT NOT NULL ,
+  furniture_id INT NOT NULL ,
   maker_id INT NOT NULL ,
-  CONSTRAINT fk_mebel FOREIGN KEY (medel_id) REFERENCES mebel (id),
-  CONSTRAINT fk_makerr FOREIGN KEY (maker_id) REFERENCES maker (id)
+  CONSTRAINT fk_mebel FOREIGN KEY (furniture_id) REFERENCES furniture (id),
+  CONSTRAINT fk_maker FOREIGN KEY (maker_id) REFERENCES maker (id)
 );
+
+
+
+
+
+
+
+
+
