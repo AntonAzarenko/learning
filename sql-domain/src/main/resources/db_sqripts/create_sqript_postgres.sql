@@ -30,7 +30,7 @@ CREATE TABLE furniture (
 );
 
 -- ------------------------------------------------------------------
--- Table contains mebel_type and 'mebel_id' referrences to mobel 'id'
+-- Table contains furniture_type and 'furniture_id' references to furniture 'id'
 -- ------------------------------------------------------------------
 --FIELDS
 CREATE TABLE furniture_type (
