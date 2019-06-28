@@ -1,82 +1,51 @@
--- Table contains contacts information of makers and vendors.
--- It doesn't have foreign keys.
--- ----------------------------------------------------------
--- FIELDS:
--- id - unique identification
--- email - email
--- country - Country of registration
--- street - street of registration
--- telephone - phone number of company
-CREATE TABLE contacts (
-  id        BIGSERIAL NOT NULL PRIMARY KEY,
-  email     VARCHAR(100),
-  country   VARCHAR(45),
-  street    VARCHAR(100),
-  telephone INT       NOT NULL
-);
 
--- ----------------------------------------------
--- Table contains information about mebel product.
--- It doesn't have foreign keys.
--- ----------------------------------------------
---FIELDS
--- id - unique identification
--- title -  name of any product.
--- price - price of any product
-CREATE TABLE furniture (
+create TABLE furnitures (
   id    BIGSERIAL   NOT NULL PRIMARY KEY,
   title  VARCHAR(45) NOT NULL,
+  type   varchar(100),
+  hight double precision  Not null,
+  width double precision Not null,
+  long double precision Not null,
   price DECIMAL     NOT NULL
 );
 
--- ------------------------------------------------------------------
--- Table contains furniture_type and 'furniture_id' references to furniture 'id'
--- ------------------------------------------------------------------
---FIELDS
-CREATE TABLE furniture_type (
-  furniture_id INT NOT NULL,
-  type     VARCHAR(255),
-  CONSTRAINT fk_mebel_type FOREIGN KEY (furniture_id) REFERENCES furniture (id)
-);
-
--- Table contains information about vendors also references to contacts
--- It has foreign key 'contact_id' to reference contacts 'id'
-CREATE TABLE vendor (
+create TABLE vendors (
   id         BIGSERIAL NOT NULL PRIMARY KEY,
-  title      VARCHAR(100),
-  contact_id INT       NOT NULL,
-  CONSTRAINT fk_vendors_contact FOREIGN KEY (contact_id) REFERENCES contacts (id)
+  title      VARCHAR(100)
 );
 
-CREATE TABLE maker (
+create TABLE manufacturer (
   id BIGSERIAL NOT NULL PRIMARY KEY,
-  title VARCHAR(255),
-  contact_id INT       NOT NULL,
-  CONSTRAINT fk_maker_contact FOREIGN KEY (contact_id) REFERENCES contacts (id)
+  title VARCHAR(255)
 );
 
--- Table contains demensions information for each product.
-CREATE TABLE dimentions (
-  id        BIGSERIAL NOT NULL PRIMARY KEY,
-  height    DOUBLE PRECISION,
-  width     DOUBLE PRECISION,
-  thickness DOUBLE PRECISION,
-  furniture_id  INT,
-  CONSTRAINT fk_demensions_mebel FOREIGN KEY (furniture_id) REFERENCES furniture (id)
-);
-
-CREATE TABLE vendor_has_makers (
+create TABLE vendor_to_manufacturer_map (
+   id   BIGSERIAL NOT NULL PRIMARY KEY,
   vendor_id INT NOT NULL,
-  maker_id  INT NOT NULL,
-  CONSTRAINT fk_vendor FOREIGN KEY (vendor_id) REFERENCES vendor (id),
-  CONSTRAINT fk_maker FOREIGN KEY (maker_id) REFERENCES maker (id)
+  manufacturer_id  INT NOT NULL,
+  CONSTRAINT fk_vendor FOREIGN KEY (vendor_id) REFERENCES vendors (id),
+  CONSTRAINT fk_manufacturer FOREIGN KEY (manufacturer_id) REFERENCES manufacturer (id)
 );
 
-CREATE TABLE maker_has_mebel (
+create TABLE maker_to_furniture_map (
+id   BIGSERIAL NOT NULL PRIMARY KEY,
   furniture_id INT NOT NULL ,
-  maker_id INT NOT NULL ,
-  CONSTRAINT fk_mebel FOREIGN KEY (furniture_id) REFERENCES furniture (id),
-  CONSTRAINT fk_maker FOREIGN KEY (maker_id) REFERENCES maker (id)
+  manufacturer_id INT NOT NULL ,
+  CONSTRAINT fk_mebel FOREIGN KEY (furniture_id) REFERENCES furnitures (id),
+  CONSTRAINT fk_maker FOREIGN KEY (manufacturer_id) REFERENCES manufacturer (id)
+);
+
+create  TABLE contacts (
+  id        BIGSERIAL NOT NULL PRIMARY KEY,
+  country   VARCHAR(100)NOT NULL,
+  city      VARCHAR(100) NOT NULL,
+  street    VARCHAR(100) NOT NULL,
+  email     VARCHAR(100)NOT NULL,
+  phone     VARCHAR(13)       NOT NULL,
+  manufacturer_id  INT ,
+  vendor_id INT ,
+  CONSTRAINT fk_vendor FOREIGN KEY (vendor_id) REFERENCES vendors (id),
+  CONSTRAINT fk_manufacturer FOREIGN KEY (manufacturer_id) REFERENCES manufacturer (id)
 );
 
 

@@ -58,6 +58,10 @@
         </dependency>
     </dependencies>
 
+    <properties>
+        <start-class>com.azarenka.Application</start-class>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
