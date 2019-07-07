@@ -1,12 +1,19 @@
 
+Create Table type  (
+  id BIGSERIAL NOT NULL PRIMARY KEY ,
+  type VARCHAR(100) NOT NULL
+);
+
+
 create TABLE furnitures (
   id    BIGSERIAL   NOT NULL PRIMARY KEY,
   title  VARCHAR(45) NOT NULL,
-  type   varchar(100),
+  type_id   varchar(100),
   hight double precision  Not null,
   width double precision Not null,
   long double precision Not null,
-  price DECIMAL     NOT NULL
+  price DECIMAL     NOT NULL,
+  CONSTRAINT fk_type_id FOREIGN KEY (type_id) REFERENCES type (id)
 );
 
 create TABLE vendors (

@@ -8,6 +8,155 @@
                             http://www.liquibase.org/xml/ns/dbchangelog-ext
                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <changeSet id="2019-06-17-00" author="Anton Azarenka" runInTransaction="false">
+    <changeSet id="2019-07-07-00" author="Anton Azarenka" runInTransaction="false">
+        <createTable tableName="type" schemaName="main">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="type" type="varchar(256)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="furniture" schemaName="main">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="title" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type_id" type="int">
+                <constraints nullable="false"
+                             foreignKeyName="fk_type"
+                             referencedTableName="type"
+                             referencedColumnNames="id"
+                             referencedTableSchemaName="main"/>
+            </column>
+            <column name="height" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="width" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="long" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="decimal">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="vendors" schemaName="main">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="title" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="manufacturer" schemaName="main">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="title" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="vendor_to_manufacturer_map" schemaName="main">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="vendor_id" type="int">
+                <constraints nullable="false"
+                             foreignKeyName="fk_vendor_id"
+                             referencedTableName="vendors"
+                             referencedColumnNames="id"
+                             referencedTableSchemaName="main"/>
+            </column>
+            <column name="manufacturer_id" type="int">
+                <constraints nullable="false"
+                             foreignKeyName="fk_manufacturer_id"
+                             referencedTableName="manufacturer"
+                             referencedColumnNames="id"
+                             referencedTableSchemaName="main"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="maker_to_furniture_map" schemaName="main">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="furniture_id" type="int">
+                <constraints nullable="false"
+                             foreignKeyName="fk_furniture_id"
+                             referencedTableName="furniture"
+                             referencedColumnNames="id"
+                             referencedTableSchemaName="main"/>
+            </column>
+            <column name="manufacturer_id" type="int">
+                <constraints nullable="false"
+                             foreignKeyName="fk_manufacturer_id"
+                             referencedTableName="manufacturer"
+                             referencedColumnNames="id"
+                             referencedTableSchemaName="main"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="contacts_of_vendor" schemaName="main">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="country" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="street" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="vendor_id" type="int">
+                <constraints nullable="false"
+                             foreignKeyName="fk_vendor_id"
+                             referencedTableName="vendors"
+                             referencedColumnNames="id"
+                             referencedTableSchemaName="main"/>
+            </column>
+        </createTable>
+        <createTable tableName="contacts_of_manufacturer" schemaName="main">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="country" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="street" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="manufacturer_id" type="int">
+                <constraints nullable="false"
+                             foreignKeyName="fk_manufacturer_id"
+                             referencedTableName="manufacturer"
+                             referencedColumnNames="id"
+                             referencedTableSchemaName="main"/>
+            </column>
+        </createTable>
     </changeSet>
 </databaseChangeLog>
