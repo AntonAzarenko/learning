@@ -8,10 +8,37 @@ import java.math.BigDecimal;
 public class Furniture extends BaseEntity {
 
     private String title;
+    private int width;
+    private int m_long;
+    private int height;
     private BigDecimal price;
 
     public String getTitle() {
         return title;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getM_long() {
+        return m_long;
+    }
+
+    public void setM_long(int m_long) {
+        this.m_long = m_long;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     public void setTitle(String title) {
@@ -28,29 +55,31 @@ public class Furniture extends BaseEntity {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
+        if (this == o) return true;
 
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
+        if (o == null || getClass() != o.getClass()) return false;
 
         Furniture furniture = (Furniture) o;
 
         return new EqualsBuilder()
-            .appendSuper(super.equals(o))
-            .append(title, furniture.title)
-            .append(price, furniture.price)
-            .isEquals();
+                .appendSuper(super.equals(o))
+                .append(width, furniture.width)
+                .append(m_long, furniture.m_long)
+                .append(height, furniture.height)
+                .append(title, furniture.title)
+                .append(price, furniture.price)
+                .isEquals();
     }
 
     @Override
     public int hashCode() {
         return new HashCodeBuilder(17, 37)
-            .appendSuper(super.hashCode())
-            .append(title)
-            .append(price)
-            .toHashCode();
+                .appendSuper(super.hashCode())
+                .append(title)
+                .append(width)
+                .append(m_long)
+                .append(height)
+                .append(price)
+                .toHashCode();
     }
 }

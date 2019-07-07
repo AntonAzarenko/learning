@@ -1,7 +1,9 @@
 package com.azarenka.domain;
 
 public enum  Type {
-    table,
+    Table,
     kitchen,
-    drawers
+    Chest_of_drawers,
+    Cupboard,
+    Bed
 }

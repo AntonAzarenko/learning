@@ -5,19 +5,37 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 public class Contact extends BaseEntity {
 
-    private String telephone;
+    private String phone;
+    private String city;
+    private String street;
     private String country;
     private String email;
 
     public Contact() {
     }
 
-    public String getTelephone() {
-        return telephone;
+    public String getStreet() {
+        return street;
     }
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getCountry() {
@@ -38,31 +56,31 @@ public class Contact extends BaseEntity {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
+        if (this == o) return true;
 
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
+        if (o == null || getClass() != o.getClass()) return false;
 
         Contact contact = (Contact) o;
 
         return new EqualsBuilder()
-            .appendSuper(super.equals(o))
-            .append(telephone, contact.telephone)
-            .append(country, contact.country)
-            .append(email, contact.email)
-            .isEquals();
+                .appendSuper(super.equals(o))
+                .append(phone, contact.phone)
+                .append(city, contact.city)
+                .append(country, contact.country)
+                .append(email, contact.email)
+                .append(street, contact.street)
+                .isEquals();
     }
 
     @Override
     public int hashCode() {
         return new HashCodeBuilder(17, 37)
-            .appendSuper(super.hashCode())
-            .append(telephone)
-            .append(country)
-            .append(email)
-            .toHashCode();
+                .appendSuper(super.hashCode())
+                .append(phone)
+                .append(city)
+                .append(street)
+                .append(country)
+                .append(email)
+                .toHashCode();
     }
 }
