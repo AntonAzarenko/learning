@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a50d7cea-1b0c-4171-a32d-a07bac45a294" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/VendorRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/learning.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning.iws" beforeDir="false" afterPath="$PROJECT_DIR$/learning.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sql-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-domain/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sql-domain/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/create_sqript_postgres.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/create_sqript_postgres.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/intro_sqript.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/intro_sqript.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/shema_sql.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/shema_sql.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/FurnitureRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/FurnitureRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql-domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sql-domain/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-domain/target/sql-domain-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql-domain/target/sql-domain-1.0.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/sql-domain/target/" />
@@ -185,23 +180,7 @@
     </filter>
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/shema_sql.jpg">
-                <provider selected="true" editor-type-id="images" />
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
+    <option name="isMigrated" value="true" />
   </component>
   <component name="EjbViewSettings">
     <EjbView showMembers="false" autoscrollToSource="false" />
@@ -209,26 +188,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql-domain/pom.xml">
+        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/create_sqript_postgres.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+            <state relative-caret-position="952">
+              <caret line="56" selection-end-line="65" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase.yml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -240,44 +205,92 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql-domain/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1445">
+              <caret line="85" column="60" selection-start-line="85" selection-start-column="60" selection-end-line="85" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/controller/ControllerAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/FurnitureRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/furniture.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/intro_sqript.sql">
+        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/VendorRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="119">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/create_sqript_postgres.sql">
+        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/service/FurnitureServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learning.iws">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learning.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/domain/BaseEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="136">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -295,6 +308,8 @@
         <option value="$PROJECT_DIR$/sql-domain/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/create_sqript_postgres.sql" />
         <option value="$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/intro_sqript.sql" />
+        <option value="$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/FurnitureRepository.java" />
+        <option value="$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/VendorRepository.java" />
       </list>
     </option>
   </component>
@@ -332,6 +347,11 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="sql-domain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sql-domain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -375,6 +395,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -425,6 +447,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com.azarenka" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="sql-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.azarenka" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -433,7 +465,9 @@
               <item name="sql-domain" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.azarenka" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
@@ -442,7 +476,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="db_sqripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
@@ -457,8 +490,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewSettings">
@@ -597,7 +628,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
-      <window_info id="Project" order="1" weight="0.25746268" />
+      <window_info id="Project" order="1" visible="true" weight="0.27345416" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Structure" order="3" weight="0.25" />
       <window_info id="Web" order="4" weight="0.25" />
@@ -608,7 +639,7 @@
       <window_info anchor="bottom" id="Build" order="0" weight="0.016607355" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" />
+      <window_info anchor="bottom" id="Run" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32977462" />
       <window_info anchor="bottom" id="EJB" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.16132858" />
@@ -619,7 +650,7 @@
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32977462" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="bottom" x="5" y="297" width="1238" height="278" id="Terminal" order="14" weight="0.24777777" />
+      <window_info active="true" anchor="bottom" x="5" y="297" width="1238" height="278" id="Terminal" order="14" visible="true" weight="0.24777777" />
       <window_info anchor="bottom" id="Analysis" order="15" />
       <window_info anchor="bottom" id="CVS" order="16" />
       <window_info anchor="bottom" id="Messages" order="17" />
@@ -637,7 +668,7 @@
       <window_info anchor="right" id="Palette" order="10" />
       <window_info anchor="right" id="Coverage" order="11" sideWeight="0.5074074" side_tool="true" weight="0.24717286" />
       <window_info anchor="right" id="Aspects" order="12" />
-      <window_info anchor="right" id="Maven" order="13" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="13" visible="true" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="14" />
     </layout>
   </component>
@@ -729,13 +760,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/domain/Dimensions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/domain/Dimensions.java" />
     <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/domain/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -747,42 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/schema-init.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -799,13 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/create_sqript_postgres.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/intro_sqript.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
@@ -815,6 +797,111 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/shema_sql.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/changelog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/db-init.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/main_schema_changelog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="160" column="13" selection-start-line="160" selection-start-column="13" selection-end-line="160" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/repository.jpg" />
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/create_sqript_postgres.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/schema-init.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="60" selection-start-line="85" selection-start-column="60" selection-end-line="85" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/service/FurnitureServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/controller/ControllerAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/FurnitureRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/furniture.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/VendorRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
