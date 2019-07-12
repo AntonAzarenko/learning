@@ -3,7 +3,7 @@ package com.azarenka.domain;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
-public class Maker extends BaseEntity {
+public class Manufacturer extends BaseEntity {
 
     private String title;
 
@@ -25,11 +25,11 @@ public class Maker extends BaseEntity {
             return false;
         }
 
-        Maker maker = (Maker) o;
+        Manufacturer MAnufacturer = (Manufacturer) o;
 
         return new EqualsBuilder()
             .appendSuper(super.equals(o))
-            .append(title, maker.title)
+            .append(title, MAnufacturer.title)
             .isEquals();
     }
 

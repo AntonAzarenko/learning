@@ -16,7 +16,7 @@
     </resultMap>
 
     <select id="findFurniture" resultType="Furniture">
-        SELECT DISTINCT
+        SELECT
         f.id,
         f.title,
         t.type
@@ -30,5 +30,15 @@
         join main.type t ON t.id = f.type_id
         join main.maker_to_furniture_map mF On m.id = f.id
         where price > #{cost};
+    </select>
+
+    <select id="getFullPriceFromManufacturer" resultType="Furniture">
+        SELECT
+        sum(price)
+        FROM
+        main.furniture f
+        join main.maker_to_furniture_map m ON f.id=m.furniture_id
+        join main.manufacturer mf ON mf.id = m.manufacturer_id
+        where mf.title = #{title}
     </select>
 </mapper>

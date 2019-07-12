@@ -12,10 +12,17 @@ import java.util.List;
 @Mapper
 @Repository
 public interface FurnitureRepository {
+
     /**
-     * @param name
-     * @param cost
-     * @return
+     * Returns list of furniture from manufacturers {@link com.azarenka.domain.Manufacturer} with title #name and where
+     * price not more #cost
+     *
+     * @param name @{link Manufacturer}
+     * @param cost price to furniture
+     * @return list of furniture.
      */
     List<Furniture> findFurniture(@Param("name") String name, @Param("cost") BigDecimal cost);
+
+
+    BigDecimal getFullPriceFromManufacturer(@Param("title") String title);
 }

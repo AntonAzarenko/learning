@@ -1,0 +1,24 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.azarenka.repository.ContactRepository">
+
+    <resultMap type="Contact" id="furniture">
+        <id column="id" property="id"/>
+        <result column="phone" property="phone"/>
+        <result column="city" property="city"/>
+        <result column="street" property="street"/>
+        <result column="country" property="country"/>
+        <result column="mail" property="mail"/>
+    </resultMap>
+
+    <select id="getContacts" resultType="Vendor">
+        SELECT
+        count(*)
+        FROM
+        main.vendors f
+        join main.vendor_to_manufacturer_map m ON f.id=m.vendor_id
+        join main.manufacturer mf ON mf.id = m.manufacturer_id
+        where mf.title = #{title}
+    </select>
+</mapper>
