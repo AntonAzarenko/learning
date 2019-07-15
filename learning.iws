@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a50d7cea-1b0c-4171-a32d-a07bac45a294" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/ManufacturerRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/mapper/manufacturer.xml" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/learning.ipr" afterPath="$PROJECT_DIR$/learning.ipr" />
       <change beforePath="$PROJECT_DIR$/learning.iws" afterPath="$PROJECT_DIR$/learning.iws" />
-      <change beforePath="$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/controller/ControllerAPI.java" afterPath="$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/controller/ControllerAPI.java" />
-      <change beforePath="$PROJECT_DIR$/sql-domain/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/sql-domain/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/mapper/contacts.xml" afterPath="$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/mapper/contacts.xml" />
-      <change beforePath="$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/mapper/vendor.xml" afterPath="$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/mapper/vendor.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/sql-domain/target/" />
@@ -308,7 +300,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -318,10 +310,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="contacts.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/mapper/contacts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding>
+                <marker date="1563020520014" expanded="true" signature="602:980" ph="SELECT count... contact" />
+                <marker date="1563020520014" expanded="true" signature="602:988" ph="SELECT city,... contacts_of_vendor" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="6602b87e-3f70-4934-a4e5-08d801ee6e58.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.ideaDataSources/6602b87e-3f70-4934-a4e5-08d801ee6e58.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2295">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -361,18 +366,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManufacturerRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/ManufacturerRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="vendor.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/mapper/vendor.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -397,6 +390,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -525,7 +523,6 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -640,6 +637,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewSettings">
@@ -787,12 +785,13 @@
       <workItem from="1561279561476" duration="46000" />
       <workItem from="1563018952193" duration="3759000" />
       <workItem from="1563106748281" duration="5685000" />
-      <workItem from="1563163900930" duration="457000" />
+      <workItem from="1563163900930" duration="577000" />
+      <workItem from="1563210918056" duration="36000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9947000" />
+    <option name="totallyTimeSpent" value="10103000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1192,17 +1191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/mapper/contacts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding>
-            <marker date="1563020520014" expanded="true" signature="602:980" ph="SELECT count... contact" />
-            <marker date="1563020520014" expanded="true" signature="602:988" ph="SELECT city,... contacts_of_vendor" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/learning8badf89c/6602b87e-3f70-4934-a4e5-08d801ee6e58/postgres.main.contacts_of_vendor">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1302,7 +1290,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.ideaDataSources/6602b87e-3f70-4934-a4e5-08d801ee6e58.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2295">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1313,6 +1301,17 @@
         <state relative-caret-position="85">
           <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/mapper/contacts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <marker date="1563020520014" expanded="true" signature="602:980" ph="SELECT count... contact" />
+            <marker date="1563020520014" expanded="true" signature="602:988" ph="SELECT city,... contacts_of_vendor" />
+          </folding>
         </state>
       </provider>
     </entry>
