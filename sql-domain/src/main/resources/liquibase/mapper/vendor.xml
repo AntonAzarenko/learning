@@ -12,8 +12,7 @@
         SELECT
         count(*)
         FROM
-        main.vendors f
-        join main.vendor_to_manufacturer_map m ON f.id=m.vendor_id
+        main.vendor_to_manufacturer_map m
         join main.manufacturer mf ON mf.id = m.manufacturer_id
         where mf.title = #{title}
     </select>
