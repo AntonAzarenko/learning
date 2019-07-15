@@ -11,8 +11,8 @@
     <select id="getCountVendorsByTitleManufacturer" resultType="Vendor">
         SELECT count(*)
         FROM
-            main.vendor_to_manufacturer_map m
-            JOIN main.manufacturer mf ON mf.id = m.manufacturer_id
+        main.vendor_to_manufacturer_map m
+        JOIN main.manufacturer mf ON mf.id = m.manufacturer_id
         WHERE mf.title = #{title}
     </select>
 
