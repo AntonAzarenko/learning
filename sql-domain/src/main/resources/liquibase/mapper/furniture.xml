@@ -29,7 +29,8 @@
         join main.manufacturer m ON m.title=#{name}
         join main.type t ON t.id = f.type_id
         join main.maker_to_furniture_map mF On m.id = f.id
-        where price > #{cost};
+        where price > #{cost}
+        Group by f.id, t.type
     </select>
 
     <select id="getFullPriceFromManufacturer" resultType="Furniture">
