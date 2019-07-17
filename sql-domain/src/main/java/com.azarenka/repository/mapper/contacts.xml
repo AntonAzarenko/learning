@@ -14,11 +14,17 @@
 
     <select id="getContacts" resultType="Vendor">
         SELECT
-        count(*)
+            city,
+            country,
+            street,
+            phone,
+            email
         FROM
-        main.vendors f
-        join main.vendor_to_manufacturer_map m ON f.id=m.vendor_id
-        join main.manufacturer mf ON mf.id = m.manufacturer_id
-        where mf.title = #{title}
+            main.contacts_of_vendor c
+            JOIN main.vendor_to_manufacturer_map vm ON vm.vendor_id = c.vendor_id
+            JOIN main.maker_to_furniture_map mf ON mf.id = vm.manufacturer_id
+            JOIN main.furniture f ON f.id = mf.furniture_id
+            JOIN main.type t ON f.type_id = #{typeId}
+        WHERE f.title = #{title}
     </select>
 </mapper>

@@ -1,0 +1,27 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.azarenka.repository.VendorRepository">
+
+    <resultMap type="Vendor" id="vendor">
+        <id column="id" property="id"/>
+        <result column="title" property="title"/>
+    </resultMap>
+
+    <select id="getCountVendorsByTitleManufacturer" resultType="Vendor">
+        SELECT count(*)
+        FROM
+        main.vendor_to_manufacturer_map m
+        JOIN main.manufacturer mf ON mf.id = m.manufacturer_id
+        WHERE mf.title = #{title}
+    </select>
+
+    <select id="getTopVendors" resultType="Vendor">
+        SELECT title
+        FROM
+            main.vendors v
+            JOIN main.vendor_to_manufacturer_map vm ON v.id = vm.vendor_id
+            JOIN main.manufacturer m ON vm.manufacturer_id = m.id
+        WHERE m.title = #{title}
+    </select>
+</mapper>

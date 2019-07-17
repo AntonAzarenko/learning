@@ -22,7 +22,7 @@ public class ControllerAPI {
     private FurnitureService service;
 
     @GetMapping(value = "/get", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Furniture> getFurniture(@RequestParam(required = true) @PathVariable("name") String name,
+    public List<Furniture> getFurniture(@RequestParam(required = false) @PathVariable("name") String name,
                                         @RequestParam(required = false) @PathVariable("cost")
                                        BigDecimal cost) {
         log.info("Connecting..{} {}", name, cost);

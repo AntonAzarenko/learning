@@ -1265,6 +1265,14 @@
   <component name="DBNavigator.Project.StatementExecutionManager">
     <execution-variables />
   </component>
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="postgres@localhost" uuid="6602b87e-3f70-4934-a4e5-08d801ee6e58">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+    </data-source>
+  </component>
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sql-domain" charset="UTF-8" />
@@ -1482,30 +1490,6 @@
           <option name="ITERATION_ELEMENTS_WRAPPING" value="chop_down_if_not_single" />
         </formatting-settings>
       </DBN-SQL>
-      <DBN-PSQL>
-        <case-options enabled="true">
-          <option name="KEYWORD_CASE" value="lower" />
-          <option name="FUNCTION_CASE" value="lower" />
-          <option name="PARAMETER_CASE" value="lower" />
-          <option name="DATATYPE_CASE" value="lower" />
-          <option name="OBJECT_CASE" value="preserve" />
-        </case-options>
-        <formatting-settings enabled="false" />
-      </DBN-PSQL>
-      <DBN-SQL>
-        <case-options enabled="true">
-          <option name="KEYWORD_CASE" value="lower" />
-          <option name="FUNCTION_CASE" value="lower" />
-          <option name="PARAMETER_CASE" value="lower" />
-          <option name="DATATYPE_CASE" value="lower" />
-          <option name="OBJECT_CASE" value="preserve" />
-        </case-options>
-        <formatting-settings enabled="false">
-          <option name="STATEMENT_SPACING" value="one_line" />
-          <option name="CLAUSE_CHOP_DOWN" value="chop_down_if_statement_long" />
-          <option name="ITERATION_ELEMENTS_WRAPPING" value="chop_down_if_not_single" />
-        </formatting-settings>
-      </DBN-SQL>
     </code_scheme>
   </component>
   <component name="ProjectModuleManager">
@@ -1520,6 +1504,17 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+  <component name="dataSourceStorageLocal">
+    <data-source name="postgres@localhost" uuid="6602b87e-3f70-4934-a4e5-08d801ee6e58">
+      <database-info product="PostgreSQL" version="9.6.10" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>postgres:main,public</introspection-schemas>
+    </data-source>
   </component>
   <component name="libraryTable">
     <library name="Maven: ch.qos.logback:logback-classic:1.2.3">
