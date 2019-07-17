@@ -12,7 +12,6 @@
         <result column="mail" property="mail"/>
     </resultMap>
 
-
     <select id="getContacts" resultType="Vendor">
         SELECT
             city,

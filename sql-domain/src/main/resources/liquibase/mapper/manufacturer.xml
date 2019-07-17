@@ -29,4 +29,5 @@
             RIGHT JOIN main.type t ON t.id = f.type_id
         GROUP BY m.title, t.type
     </select>
+
 </mapper>
