@@ -17,11 +17,13 @@
     </select>
 
     <select id="getTopVendors" resultType="Vendor">
-        SELECT title
-        FROM
-            main.vendors v
-            JOIN main.vendor_to_manufacturer_map vm ON v.id = vm.vendor_id
-            JOIN main.manufacturer m ON vm.manufacturer_id = m.id
-        WHERE m.title = #{title}
+        SELECT  v.title as Vendor, count(fm.furniture_id) as count_of_things
+        FROM main.vendors v
+        inner JOIN main.vendor_to_manufacturer_map vm ON vm.vendor_id = v.id
+        join main.manufacturer m ON vm.manufacturer_id = m.id
+        join main.maker_to_furniture_map fm ON m.id = fm.manufacturer_id
+        where m.title = #{title}
+        Group by v.title
+        order by count_of_things desc limit 10;
     </select>
 </mapper>
