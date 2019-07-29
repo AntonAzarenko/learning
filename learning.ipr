@@ -804,10 +804,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="annotation" />
+        <module name="collection" />
+        <module name="generics" />
+        <module name="javaIO" />
         <module name="sql-domain" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="annotation" target="1.8" />
+      <module name="collection" target="1.8" />
+      <module name="generics" target="1.8" />
+      <module name="javaIO" target="1.8" />
       <module name="learning" target="1.8" />
       <module name="sql-domain" target="1.8" />
     </bytecodeTargetLevel>
@@ -1275,6 +1283,10 @@
   </component>
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/annotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/collection" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generics" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaIO" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sql-domain" charset="UTF-8" />
   </component>
   <component name="ExportToHTMLSettings">
@@ -1494,6 +1506,10 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection/collection.iml" filepath="$PROJECT_DIR$/collection/collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generics/generics.iml" filepath="$PROJECT_DIR$/generics/generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaIO/javaIO.iml" filepath="$PROJECT_DIR$/javaIO/javaIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning.iml" filepath="$PROJECT_DIR$/learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/sql-domain/sql-domain.iml" filepath="$PROJECT_DIR$/sql-domain/sql-domain.iml" />
     </modules>

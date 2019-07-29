@@ -18,6 +18,10 @@
 
     <modules>
         <module>sql-domain</module>
+        <module>javaIO</module>
+        <module>annotation</module>
+        <module>collection</module>
+        <module>generics</module>
     </modules>
 
     <properties>
