@@ -83,7 +83,7 @@
                 <version>3.5.0</version>
                 <configuration>
                     <changeLogFile>liquibase/changelog.xml</changeLogFile>
-                    <propertyFile>src/main/resources/liquibase.yml</propertyFile>
+                    <propertyFile>src/application/resources/liquibase.yml</propertyFile>
                     <verbose>true</verbose>
                 </configuration>
             </plugin>

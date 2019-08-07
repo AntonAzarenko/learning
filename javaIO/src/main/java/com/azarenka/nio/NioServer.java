@@ -24,7 +24,6 @@ public class NioServer {
         serverSocketChannel.configureBlocking(false);
         InetSocketAddress isa = new InetSocketAddress(NioClient.ADDRESS, NioClient.PORT);
         serverSocketChannel.socket().bind(isa);
-
     }
 
     public void run() throws Exception {

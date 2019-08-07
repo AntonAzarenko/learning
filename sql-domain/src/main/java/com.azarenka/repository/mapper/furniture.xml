@@ -25,10 +25,10 @@
         long,
         price
         FROM
-        main.furniture f
-        join main.manufacturer m ON m.title=#{name}
-        join main.type t ON t.id = f.type_id
-        join main.maker_to_furniture_map mF On m.id = f.id
+        application.furniture f
+        join application.manufacturer m ON m.title=#{name}
+        join application.type t ON t.id = f.type_id
+        join application.maker_to_furniture_map mF On m.id = f.id
         where price > #{cost}
         Group by f.id, t.type
     </select>
@@ -37,9 +37,9 @@
         SELECT
         sum(price)
         FROM
-        main.furniture f
-        join main.maker_to_furniture_map m ON f.id=m.furniture_id
-        join main.manufacturer mf ON mf.id = m.manufacturer_id
+        application.furniture f
+        join application.maker_to_furniture_map m ON f.id=m.furniture_id
+        join application.manufacturer mf ON mf.id = m.manufacturer_id
         where mf.title = #{title}
     </select>
 </mapper>

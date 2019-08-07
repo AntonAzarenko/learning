@@ -804,11 +804,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="annotation" />
-        <module name="collection" />
-        <module name="generics" />
+        <module name="multithreading" />
         <module name="javaIO" />
+        <module name="annotation" />
         <module name="sql-domain" />
+        <module name="generics" />
+        <module name="collection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -817,6 +818,7 @@
       <module name="generics" target="1.8" />
       <module name="javaIO" target="1.8" />
       <module name="learning" target="1.8" />
+      <module name="multithreading" target="1.8" />
       <module name="sql-domain" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -1287,6 +1289,7 @@
     <file url="file://$PROJECT_DIR$/collection" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/generics" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaIO" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/multithreading" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sql-domain" charset="UTF-8" />
   </component>
   <component name="ExportToHTMLSettings">
@@ -1317,6 +1320,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="annotation" options="-parameters" />
+      <module name="collection" options="-parameters" />
+      <module name="generics" options="-parameters" />
+      <module name="javaIO" options="-parameters" />
+      <module name="multithreading" options="-parameters" />
       <module name="sql-domain" options="-parameters" />
     </option>
   </component>
@@ -1502,6 +1510,30 @@
           <option name="ITERATION_ELEMENTS_WRAPPING" value="chop_down_if_not_single" />
         </formatting-settings>
       </DBN-SQL>
+      <DBN-PSQL>
+        <case-options enabled="true">
+          <option name="KEYWORD_CASE" value="lower" />
+          <option name="FUNCTION_CASE" value="lower" />
+          <option name="PARAMETER_CASE" value="lower" />
+          <option name="DATATYPE_CASE" value="lower" />
+          <option name="OBJECT_CASE" value="preserve" />
+        </case-options>
+        <formatting-settings enabled="false" />
+      </DBN-PSQL>
+      <DBN-SQL>
+        <case-options enabled="true">
+          <option name="KEYWORD_CASE" value="lower" />
+          <option name="FUNCTION_CASE" value="lower" />
+          <option name="PARAMETER_CASE" value="lower" />
+          <option name="DATATYPE_CASE" value="lower" />
+          <option name="OBJECT_CASE" value="preserve" />
+        </case-options>
+        <formatting-settings enabled="false">
+          <option name="STATEMENT_SPACING" value="one_line" />
+          <option name="CLAUSE_CHOP_DOWN" value="chop_down_if_statement_long" />
+          <option name="ITERATION_ELEMENTS_WRAPPING" value="chop_down_if_not_single" />
+        </formatting-settings>
+      </DBN-SQL>
     </code_scheme>
   </component>
   <component name="ProjectModuleManager">
@@ -1511,6 +1543,7 @@
       <module fileurl="file://$PROJECT_DIR$/generics/generics.iml" filepath="$PROJECT_DIR$/generics/generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaIO/javaIO.iml" filepath="$PROJECT_DIR$/javaIO/javaIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning.iml" filepath="$PROJECT_DIR$/learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multithreading/multithreading.iml" filepath="$PROJECT_DIR$/multithreading/multithreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/sql-domain/sql-domain.iml" filepath="$PROJECT_DIR$/sql-domain/sql-domain.iml" />
     </modules>
   </component>

@@ -9,7 +9,7 @@
                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
     <changeSet id="2019-07-07-00" author="Anton Azarenka" runInTransaction="false">
-        <createTable tableName="type" schemaName="main">
+        <createTable tableName="type" schemaName="application">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -18,7 +18,7 @@
             </column>
         </createTable>
 
-        <createTable tableName="furniture" schemaName="main">
+        <createTable tableName="furniture" schemaName="application">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -30,7 +30,7 @@
                              foreignKeyName="fk_type"
                              referencedTableName="type"
                              referencedColumnNames="id"
-                             referencedTableSchemaName="main"/>
+                             referencedTableSchemaName="application"/>
             </column>
             <column name="height" type="int">
                 <constraints nullable="false"/>
@@ -46,7 +46,7 @@
             </column>
         </createTable>
 
-        <createTable tableName="vendors" schemaName="main">
+        <createTable tableName="vendors" schemaName="application">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -55,7 +55,7 @@
             </column>
         </createTable>
 
-        <createTable tableName="manufacturer" schemaName="main">
+        <createTable tableName="manufacturer" schemaName="application">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -64,7 +64,7 @@
             </column>
         </createTable>
 
-        <createTable tableName="vendor_to_manufacturer_map" schemaName="main">
+        <createTable tableName="vendor_to_manufacturer_map" schemaName="application">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -73,18 +73,18 @@
                              foreignKeyName="fk_vendor_id"
                              referencedTableName="vendors"
                              referencedColumnNames="id"
-                             referencedTableSchemaName="main"/>
+                             referencedTableSchemaName="application"/>
             </column>
             <column name="manufacturer_id" type="int">
                 <constraints nullable="false"
                              foreignKeyName="fk_manufacturer_id"
                              referencedTableName="manufacturer"
                              referencedColumnNames="id"
-                             referencedTableSchemaName="main"/>
+                             referencedTableSchemaName="application"/>
             </column>
         </createTable>
 
-        <createTable tableName="maker_to_furniture_map" schemaName="main">
+        <createTable tableName="maker_to_furniture_map" schemaName="application">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -93,18 +93,18 @@
                              foreignKeyName="fk_furniture_id"
                              referencedTableName="furniture"
                              referencedColumnNames="id"
-                             referencedTableSchemaName="main"/>
+                             referencedTableSchemaName="application"/>
             </column>
             <column name="manufacturer_id" type="int">
                 <constraints nullable="false"
                              foreignKeyName="fk_manufacturer_id"
                              referencedTableName="manufacturer"
                              referencedColumnNames="id"
-                             referencedTableSchemaName="main"/>
+                             referencedTableSchemaName="application"/>
             </column>
         </createTable>
 
-        <createTable tableName="contacts_of_vendor" schemaName="main">
+        <createTable tableName="contacts_of_vendor" schemaName="application">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -128,10 +128,10 @@
                              foreignKeyName="fk_vendor_id"
                              referencedTableName="vendors"
                              referencedColumnNames="id"
-                             referencedTableSchemaName="main"/>
+                             referencedTableSchemaName="application"/>
             </column>
         </createTable>
-        <createTable tableName="contacts_of_manufacturer" schemaName="main">
+        <createTable tableName="contacts_of_manufacturer" schemaName="application">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -155,7 +155,7 @@
                              foreignKeyName="fk_manufacturer_id"
                              referencedTableName="manufacturer"
                              referencedColumnNames="id"
-                             referencedTableSchemaName="main"/>
+                             referencedTableSchemaName="application"/>
             </column>
         </createTable>
     </changeSet>

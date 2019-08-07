@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>javaIO</artifactId>
+    <artifactId>multithreading</artifactId>
     <properties>
-        <start-class>com.azarenka.serialize.Application</start-class>
+        <start-class>com.azarenka.Application</start-class>
     </properties>
 
 </project>

@@ -11,9 +11,9 @@
     <select id="getManWichDoesntWorkWithVendor" resultType="Manufacturer">
         SELECT title
         FROM
-            main.manufacturer m
-            JOIN main.vendor_to_manufacturer_map vm ON vm.manufacturer_id = m.id
-            JOIN main.vendors v ON vm.vendor_id != vm.id
+            application.manufacturer m
+            JOIN application.vendor_to_manufacturer_map vm ON vm.manufacturer_id = m.id
+            JOIN application.vendors v ON vm.vendor_id != vm.id
         WHERE v.title = #{vendorTitle}
     </select>
 
@@ -23,10 +23,10 @@
             count(f.title),
             t.type
         FROM
-            main.manufacturer m
-            LEFT JOIN main.maker_to_furniture_map mf ON mf.manufacturer_id = m.id
-            LEFT JOIN main.furniture f ON mf.furniture_id != f.id
-            RIGHT JOIN main.type t ON t.id = f.type_id
+            application.manufacturer m
+            LEFT JOIN application.maker_to_furniture_map mf ON mf.manufacturer_id = m.id
+            LEFT JOIN application.furniture f ON mf.furniture_id != f.id
+            RIGHT JOIN application.type t ON t.id = f.type_id
         GROUP BY m.title, t.type
     </select>
 

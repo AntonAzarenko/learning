@@ -11,17 +11,17 @@
     <select id="getCountVendorsByTitleManufacturer" resultType="Vendor">
         SELECT count(*)
         FROM
-        main.vendor_to_manufacturer_map m
-        JOIN main.manufacturer mf ON mf.id = m.manufacturer_id
+        application.vendor_to_manufacturer_map m
+        JOIN application.manufacturer mf ON mf.id = m.manufacturer_id
         WHERE mf.title = #{title}
     </select>
 
     <select id="getTopVendors" resultType="Vendor">
         SELECT  v.title as Vendor, count(fm.furniture_id) as count_of_things
-        FROM main.vendors v
-        inner JOIN main.vendor_to_manufacturer_map vm ON vm.vendor_id = v.id
-        join main.manufacturer m ON vm.manufacturer_id = m.id
-        join main.maker_to_furniture_map fm ON m.id = fm.manufacturer_id
+        FROM application.vendors v
+        inner JOIN application.vendor_to_manufacturer_map vm ON vm.vendor_id = v.id
+        join application.manufacturer m ON vm.manufacturer_id = m.id
+        join application.maker_to_furniture_map fm ON m.id = fm.manufacturer_id
         where m.title = #{title}
         Group by v.title
         order by count_of_things desc limit 10;

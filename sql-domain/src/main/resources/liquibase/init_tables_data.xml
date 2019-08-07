@@ -11,7 +11,7 @@
         <comment>Init table type data:</comment>
         <sql>
             INSERT INTO
-            main.type (type)
+            application.type (type)
             VALUES
             ('chest of drawers'),
             ('Cupboard'),
@@ -23,7 +23,7 @@
 
     <changeSet id="2019-07-07-11" author="Anton Azarenka">
         <sql>
-            insert into main.manufacturer (id,title) values (1,'Fermentum Corp.'),(2,'Et Ultrices Posuere
+            insert into application.manufacturer (id,title) values (1,'Fermentum Corp.'),(2,'Et Ultrices Posuere
             Inc.'),(3,'Vestibulum Nec Consulting'),
             (4,'Enim LLP'),(5,'Mauris Eu Turpis Associates'),(6,'In Molestie Institute'),(7,'Vestibulum LLP'),(8,'Luctus
             Foundation'),(9,'Dui Corporation'),
@@ -68,7 +68,7 @@
     </changeSet>
     <changeSet id="2019-07-07-12" author="Anton Azarenka">
         <sql>
-            insert into main.furniture (id,title,type_id,height,width,long,price) values
+            insert into application.furniture (id,title,type_id,height,width,long,price) values
             (1,'954912218-00003',5,1698,1094,1074,85633),
             (2,'705082873-00005',1,196,1297,1111,3150),(3,'064136179-00005',2,1558,945,81,52757),(4,'424271005-00003',3,1378,484,658,18559),
             (5,'863185484-00004',2,427,202,1058,57979),(6,'622418960-00002',4,1002,108,574,65887),(7,'886223106-00008',5,1641,1556,1248,2222),
@@ -107,7 +107,7 @@
     </changeSet>
     <changeSet id="2019-07-07-13" author="Anton Azarenka">
         <sql>
-            insert into main.vendors (id,title) values (1,'Egestas Fusce Aliquet Company'),(2,'Feugiat Nec
+            insert into application.vendors (id,title) values (1,'Egestas Fusce Aliquet Company'),(2,'Feugiat Nec
             LLC'),(3,'Vehicula LLP'),(4,'Nullam Corp.'),
             (5,'Nisl Corporation'),(6,'Ut Tincidunt Company'),(7,'Ac PC'),(8,'Condimentum Donec At
             Foundation'),(9,'Blandit Congue In Institute'),
@@ -124,7 +124,7 @@
     </changeSet>
     <changeSet id="2019-07-07-14" author="Anton Azarenka">
         <sql>
-            insert into main.contacts_of_manufacturer (id,country,city,street,email,phone,manufacturer_id) values
+            insert into application.contacts_of_manufacturer (id,country,city,street,email,phone,manufacturer_id) values
             (1,'Mauritius','Oudenaken','Ap #712-9289 Elit St.','enim.condimentum@velarcu.ca','(151) 467-8399',1),
             (2,'Belgium','Colombo','Ap #143-8218 Aliquet St.','at@Sed.org','(720) 963-2224',2),
             (3,'San Marino','Korbach','P.O. Box 505, 2131 Nunc St.','Cum.sociis@eleifendvitae.org','(763) 327-1787',3),
@@ -247,7 +247,7 @@
     </changeSet>
     <changeSet id="2019-07-07-16" author="Anton Azarenka">
         <sql>
-            insert into main.contacts_of_vendor (id,country,city,street,email,phone,vendor_id) values
+            insert into application.contacts_of_vendor (id,country,city,street,email,phone,vendor_id) values
             (157,'Russian Federation','Rixensart','832-2404 A
             St.','venenatis@Donecvitae.edu','(643)231-9037',1),(158,'Ukraine','Shimla','Ap #141-6256 Quis
             Road','metus.sit.amet@Pellentesquetincidunttempus.net','(378)285-8832',2),(159,'Laos','Tuscaloosa','Ap
@@ -264,7 +264,7 @@
     </changeSet>
     <changeSet id="2019-07-07-17" author="Anton Azarenka">
         <sql>
-            insert into main.maker_to_furniture_map (id,furniture_id,manufacturer_id) values
+            insert into application.maker_to_furniture_map (id,furniture_id,manufacturer_id) values
             (1,1,2),(2,3,4),(3,5,6),(4,7,8),(5,9,10),(6,11,12),(7,13,14),(8,15,16),(9,17,18),(10,19,20),(11,21,22),(12,23,24),(13,25,26),
             (14,27,28),(15,29,30),(16,31,32),(17,33,34),(18,35,36),(19,37,38),(20,39,40),(21,41,42),(22,43,44),(23,45,46),(24,47,48),(25,49,50),
             (26,51,52),(27,53,54),(28,55,56),(29,57,58),(30,59,60),(31,61,62),(32,63,64),(33,65,66),(34,67,68),(35,69,70),(36,71,72),(37,73,74),
@@ -273,7 +273,7 @@
     </changeSet>
     <changeSet id="2019-07-07-18" author="Anton Azarenka">
         <sql>
-            insert into main.vendor_to_manufacturer_map (id,vendor_id,manufacturer_id) values
+            insert into application.vendor_to_manufacturer_map (id,vendor_id,manufacturer_id) values
             (1,1,2),(2,3,4),(3,5,6),(4,7,8),(5,9,10),(6,11,12),(7,13,14),(8,15,16),(9,17,18),(10,19,20),(11,21,22),(12,23,24),(13,25,26),
             (14,27,28),(15,29,30);
         </sql>

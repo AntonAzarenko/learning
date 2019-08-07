@@ -1,6 +1,6 @@
 package com.azarenka;
 
-@Service(name = "superLazy")
+@Service(name = "superLazy",lazyLoad = true)
 public class LazyService {
 
     @Init

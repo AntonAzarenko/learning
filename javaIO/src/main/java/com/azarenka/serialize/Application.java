@@ -2,17 +2,17 @@ package com.azarenka.serialize;
 
 import java.io.*;
 
-public class Main {
+public class Application {
     public static void main(String[] args) {
-        Main main = new Main();
-        main.ser(buildChild());
-        Child child = (Child) main.deser();
+        Application application = new Application();
+        application.ser(buildChild());
+        Child child = (Child) application.deser();
         System.out.println(child.toString());
     }
 
     public Object deser(){
         Object o = new Object();
-        File file = new File("d:/object.txt");
+        File file = new File("c:/object.txt");
         try {
             FileInputStream inputStream = new FileInputStream(file);
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
@@ -26,7 +26,7 @@ public class Main {
     }
 
     public boolean ser(Object o){
-        File file = new File("d:/object.txt");
+        File file = new File("c:/object.txt");
         try {
             FileOutputStream outputStream = new FileOutputStream(file);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
