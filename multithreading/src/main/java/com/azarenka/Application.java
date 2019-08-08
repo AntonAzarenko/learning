@@ -11,12 +11,11 @@ public class Application {
     private void start() {
         console = new Console();
         Util.showText("Starting program Console...");
-        console.start();
+        console.run();
     }
 
     public void exit() {
         Util.showText("Program will be close...");
         System.exit(0);
-        console.interrupt();
     }
 }

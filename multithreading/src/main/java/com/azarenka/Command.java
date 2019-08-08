@@ -1,5 +1,7 @@
 package com.azarenka;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 public interface Command {
 
     /**
