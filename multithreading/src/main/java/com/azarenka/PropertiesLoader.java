@@ -12,13 +12,16 @@ import java.util.Properties;
 
 public class PropertiesLoader {
 
-    Map<String, Method> loadCommands(String fileName) {
+    public static final Map<String, Method> allCommands = new HashMap<>();
+    private final String FILE_NAME = "commands.properties";
+
+    void loadCommands() {
         Map<String, Method> mapWithMethods = new HashMap<>();
         Properties properties = new Properties();
-        InputStream inputStream = PropertiesLoader.class.getClassLoader().getResourceAsStream(fileName);
+        InputStream inputStream = PropertiesLoader.class.getClassLoader().getResourceAsStream(FILE_NAME);
         try {
             properties.load(inputStream);
-            Map<String, String> file = loadFile(fileName);
+            Map<String, String> file = loadFile(FILE_NAME);
             file.forEach((commands, methodName) -> {
                 Method method = getMethod(methodName);
                 mapWithMethods.put(commands, method);
@@ -27,7 +30,7 @@ public class PropertiesLoader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return mapWithMethods;
+        allCommands.putAll(mapWithMethods);
     }
 
      Map<String, String> loadFile(String fileName) {
@@ -63,10 +66,5 @@ public class PropertiesLoader {
             e.printStackTrace();
         }
         return method;
-    }
-
-    public static void main(String[] args) {
-        Map<String, Method> str = new PropertiesLoader().loadCommands("commands.properties");
-        str.forEach((key, value) -> System.out.println(key + " = " + value.toString()));
     }
 }

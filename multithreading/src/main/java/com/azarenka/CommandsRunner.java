@@ -1,5 +1,6 @@
 package com.azarenka;
 
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -18,13 +19,18 @@ public class CommandsRunner extends Thread implements Commands {
         try {
             method.invoke(this);
         } catch (IllegalAccessException | InvocationTargetException e) {
-           Util.showText(e.getMessage());
+            Util.showText(e.getMessage());
         }
     }
 
     @Override
     public void startDev() {
         Util.showText("Starting dev....");
+        try {
+            Runtime.getRuntime().exec("cmd /c start cmd.exe /c \"C:\\programms\\postgreSQL\\pgsql\\pgAdmin 4\\bin\\pgAdmin4.exe && dir && ipconfig\"");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

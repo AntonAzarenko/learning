@@ -10,6 +10,9 @@ public class Application {
 
     private void start() {
         console = new Console();
+        Util.showText("Loading...");
+        PropertiesLoader loader = new PropertiesLoader();
+        loader.loadCommands();
         Util.showText("Starting program Console...");
         console.run();
     }

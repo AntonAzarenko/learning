@@ -8,8 +8,7 @@ public class CommandHandler implements Command {
     @Override
     public boolean handle(String command) {
         boolean isExist = false;
-        PropertiesLoader loader = new PropertiesLoader();
-        Map<String, Method> mapWithMethods = loader.loadCommands("commands.properties");
+        Map<String, Method> mapWithMethods = PropertiesLoader.allCommands;
         for(Map.Entry<String, Method> pair: mapWithMethods.entrySet()){
             if (pair.getKey().equals(command)) {
                 delegateToRun(pair.getValue());
