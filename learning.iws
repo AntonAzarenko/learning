@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a50d7cea-1b0c-4171-a32d-a07bac45a294" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/downloader/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/downloader/src/main/java/com/azarenka/Download.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/downloader/src/main/java/com/azarenka/DownloadManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/downloader/src/main/java/com/azarenka/DownloadTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/downloader/src/main/java/com/azarenka/ProgressRender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/src/main/java/com/azarenka/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/src/main/java/com/azarenka/test1/MemoryError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/src/main/java/com/azarenka/test1/MemoryError2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Angar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Ship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Space.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swing/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swing/src/main/java/com/azarenka/PaintDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swing/src/main/java/com/azarenka/PaintPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/learning.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning.iws" beforeDir="false" afterPath="$PROJECT_DIR$/learning.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandsRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandsRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/PropertiesLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/PropertiesLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/javaIO/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,6 +28,9 @@
     <ignored path="$PROJECT_DIR$/collection/target/" />
     <ignored path="$PROJECT_DIR$/sql-domain/target/" />
     <ignored path="$PROJECT_DIR$/multithreading/target/" />
+    <ignored path="$PROJECT_DIR$/memory/target/" />
+    <ignored path="$PROJECT_DIR$/downloader/target/" />
+    <ignored path="$PROJECT_DIR$/swing/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,93 +55,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandHandler.java">
+        <entry file="file://$PROJECT_DIR$/downloader/src/main/java/com/azarenka/Download.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="768">
+              <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#999#1000#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#995#996#0" expanded="true" />
+                <element signature="e#1024#1025#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/PropertiesLoader.java">
+        <entry file="file://$PROJECT_DIR$/downloader/src/main/java/com/azarenka/ProgressRender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            <state relative-caret-position="340">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/downloader/src/main/java/com/azarenka/DownloadTableModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#895#896#0" expanded="true" />
+                <element signature="e#1103#1104#0" expanded="true" />
+                <element signature="e#1092#1093#0" expanded="true" />
+                <element signature="e#1131#1132#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandsRunner.java">
+        <entry file="file://$PROJECT_DIR$/downloader/src/main/java/com/azarenka/DownloadManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="29" column="127" selection-start-line="29" selection-start-column="127" selection-end-line="29" selection-end-column="127" />
+            <state relative-caret-position="561">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
+                <element signature="e#756#918#0" expanded="true" />
+                <element signature="e#917#918#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multithreading/src/main/resources/commands.properties">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Observable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Console.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="564">
+              <caret line="200" column="44" lean-forward="true" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2047#2048#0" expanded="true" />
+                <element signature="e#2083#2084#0" expanded="true" />
+                <element signature="e#2952#2953#0" expanded="true" />
+                <element signature="e#2988#2989#0" expanded="true" />
+                <element signature="e#5696#5697#0" expanded="true" />
+                <element signature="e#5735#5736#0" expanded="true" />
+                <element signature="e#5937#5938#0" expanded="true" />
+                <element signature="e#5967#5968#0" expanded="true" />
+                <element signature="e#6978#6979#0" expanded="true" />
+                <element signature="e#7008#7009#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="e#124#125#0" expanded="true" />
-                <element signature="e#165#166#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multithreading/src/main/resources/descriptions.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Util.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -144,6 +153,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>21</find>
+      <find>setName</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,6 +191,20 @@
         <option value="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandHandler.java" />
         <option value="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Util.java" />
         <option value="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandsRunner.java" />
+        <option value="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Asteroid.java" />
+        <option value="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/ConsoleView.java" />
+        <option value="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Angar.java" />
+        <option value="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Ship.java" />
+        <option value="$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Space.java" />
+        <option value="$PROJECT_DIR$/memory/src/main/java/com/azarenko/test1/MemoryError.java" />
+        <option value="$PROJECT_DIR$/memory/src/main/java/com/azarenka/test1/MemoryError.java" />
+        <option value="$PROJECT_DIR$/memory/src/main/java/com/azarenka/test1/MemoryError2.java" />
+        <option value="$PROJECT_DIR$/swing/src/main/java/com/azarenka/PaintDemo.java" />
+        <option value="$PROJECT_DIR$/swing/src/main/java/com/azarenka/PaintPanel.java" />
+        <option value="$PROJECT_DIR$/downloader/src/main/java/com/azarenka/Download.java" />
+        <option value="$PROJECT_DIR$/downloader/src/main/java/com/azarenka/ProgressRender.java" />
+        <option value="$PROJECT_DIR$/downloader/src/main/java/com/azarenka/DownloadTableModel.java" />
+        <option value="$PROJECT_DIR$/downloader/src/main/java/com/azarenka/DownloadManager.java" />
       </list>
     </option>
   </component>
@@ -214,8 +238,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2" />
-    <option name="y" value="619" />
+    <option name="x" value="2224" />
+    <option name="y" value="-10" />
     <option name="width" value="1260" />
     <option name="height" value="354" />
   </component>
@@ -226,6 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,25 +261,25 @@
             <path>
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="learning" type="462c0819:PsiDirectoryNode" />
-              <item name="multithreading" type="462c0819:PsiDirectoryNode" />
+              <item name="downloader" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="learning" type="462c0819:PsiDirectoryNode" />
-              <item name="multithreading" type="462c0819:PsiDirectoryNode" />
+              <item name="downloader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="learning" type="462c0819:PsiDirectoryNode" />
-              <item name="multithreading" type="462c0819:PsiDirectoryNode" />
+              <item name="downloader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="learning" type="462c0819:PsiDirectoryNode" />
-              <item name="multithreading" type="462c0819:PsiDirectoryNode" />
+              <item name="downloader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -262,7 +287,7 @@
             <path>
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="learning" type="462c0819:PsiDirectoryNode" />
-              <item name="multithreading" type="462c0819:PsiDirectoryNode" />
+              <item name="downloader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -271,21 +296,88 @@
             <path>
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="learning" type="462c0819:PsiDirectoryNode" />
-              <item name="multithreading" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="swing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="swing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="swing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="swing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="swing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="azarenka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../meal" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -299,7 +391,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="Application.PaintDemo">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -320,13 +412,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.azarenka.list.Main" />
-      <module name="collection" />
+    <configuration name="MemoryError" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.azarenka.test1.MemoryError" />
+      <module name="memory" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.azarenka.list.*" />
+          <option name="PATTERN" value="com.azarenka.test1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -334,13 +426,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.azarenka.nio.NioClient" />
-      <module name="javaIO" />
+    <configuration name="MemoryError2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.azarenka.test1.MemoryError2" />
+      <module name="memory" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.azarenka.nio.*" />
+          <option name="PATTERN" value="com.azarenka.test1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -348,27 +440,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PropertiesLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.azarenka.PropertiesLoader" />
+    <configuration name="PaintDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.azarenka.PaintDemo" />
+      <module name="swing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.azarenka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Space" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.azarenka.ships.Space" />
       <module name="multithreading" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.azarenka.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestInputStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.azarenka.TestInputStream" />
-      <module name="javaIO" />
-      <shortenClasspath name="NONE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.azarenka.*" />
+          <option name="PATTERN" value="com.azarenka.ships.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -417,19 +509,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="Application.TestInputStream" />
-      <item itemvalue="Application.NioClient" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Application" />
-      <item itemvalue="Application.PropertiesLoader" />
+      <item itemvalue="Application.Space" />
+      <item itemvalue="Application.MemoryError" />
+      <item itemvalue="Application.MemoryError2" />
+      <item itemvalue="Application.PaintDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PaintDemo" />
+        <item itemvalue="Application.MemoryError2" />
+        <item itemvalue="Application.MemoryError" />
+        <item itemvalue="Application.Space" />
         <item itemvalue="Application.Application" />
-        <item itemvalue="Application.PropertiesLoader" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TestInputStream" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -450,10 +542,11 @@
     <option name="totallyTimeSpent" value="14459000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1912" y="-5" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
-      <window_info id="Project" order="1" visible="true" weight="0.26119402" />
+      <window_info active="true" id="Project" order="1" visible="true" weight="0.29371002" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Structure" order="3" weight="0.25" />
       <window_info id="Web" order="4" weight="0.25" />
@@ -464,7 +557,7 @@
       <window_info anchor="bottom" id="Build" order="0" weight="0.016607355" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3288889" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.033333335" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32977462" />
       <window_info anchor="bottom" id="EJB" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.28444445" />
@@ -478,7 +571,7 @@
       <window_info anchor="bottom" x="5" y="297" width="1238" height="278" id="Terminal" order="14" weight="0.28555554" />
       <window_info anchor="bottom" id="Analysis" order="15" />
       <window_info anchor="bottom" id="CVS" order="16" />
-      <window_info anchor="bottom" id="Messages" order="17" weight="0.32977462" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.3288889" />
       <window_info anchor="bottom" id="DB Execution Console" order="18" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.32875606" />
@@ -501,137 +594,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/domain/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/liquibase/schema-init.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/mapper/contacts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="81" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/mapper/vendor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="47" selection-start-line="19" selection-start-column="8" selection-end-line="26" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.ideaDataSources/6602b87e-3f70-4934-a4e5-08d801ee6e58.xml" />
-    <entry file="file://$PROJECT_DIR$/annotation/src/main/java/com/azarenka/LazyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/annotation/src/main/java/com/azarenka/SimpleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generics/src/main/java/com/azarenka/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generics/src/main/java/com/azarenka/A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learning.iws">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/net/URL.java" />
-    <entry file="file://$PROJECT_DIR$/javaIO/src/main/java/com/azarenka/util/Seracher.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/channels/Selector.java" />
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/resources/db_sqripts/shema_sql.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/mapper/manufacturer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql-domain/src/main/java/com.azarenka/repository/mapper/furniture.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaIO/src/main/java/com/azarenka/nio/ChangeRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaIO/src/main/java/com/azarenka/nio/EchoWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaIO/src/main/java/com/azarenka/nio/NioClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaIO/src/main/java/com/azarenka/nio/NioServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaIO/src/main/java/com/azarenka/util/Searcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javaIO/src/main/java/com/azarenka/serialize/AlienChild.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -712,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="913" column="16" selection-start-line="913" selection-start-column="16" selection-end-line="913" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql-domain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -796,20 +751,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Command.java">
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/PropertiesLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/resources/commands.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -834,47 +789,272 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/multithreading/src/main/resources/commands.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/multithreading/src/main/resources/descriptions.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/PropertiesLoader.java">
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandsRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandsRunner.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="127" selection-start-line="29" selection-start-column="127" selection-end-line="29" selection-end-column="127" />
+        <state relative-caret-position="165">
+          <caret line="962" column="19" selection-start-line="962" selection-start-column="19" selection-end-line="962" selection-end-column="19" />
+          <folding>
+            <element signature="e#37304#37305#0" expanded="true" />
+            <element signature="e#37347#37348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/ConsoleView.java" />
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Asteroid.java" />
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="1168" column="14" selection-start-line="1168" selection-start-column="14" selection-end-line="1168" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3022#3023#0" expanded="true" />
+            <element signature="e#3050#3051#0" expanded="true" />
+            <element signature="e#3097#3098#0" expanded="true" />
+            <element signature="e#3131#3132#0" expanded="true" />
+            <element signature="e#3163#3164#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3234#3235#0" expanded="true" />
+            <element signature="e#3268#3269#0" expanded="true" />
+            <element signature="e#3309#3310#0" expanded="true" />
+            <element signature="e#3339#3340#0" expanded="true" />
+            <element signature="e#3392#3393#0" expanded="true" />
+            <element signature="e#3430#3431#0" expanded="true" />
+            <element signature="e#3462#3463#0" expanded="true" />
+            <element signature="e#3490#3491#0" expanded="true" />
+            <element signature="e#3532#3533#0" expanded="true" />
+            <element signature="e#3566#3567#0" expanded="true" />
+            <element signature="e#3595#3596#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3662#3663#0" expanded="true" />
+            <element signature="e#3696#3697#0" expanded="true" />
+            <element signature="e#3753#3754#0" expanded="true" />
+            <element signature="e#3820#3821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/atomic/AtomicBoolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+          <folding>
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1566#1567#0" expanded="true" />
+            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="e#1852#1853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Angar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multithreading/src/main/java/com/azarenka/ships/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/src/main/java/com/azarenka/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/src/main/java/com/azarenka/test1/MemoryError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/downloader/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/src/main/java/com/azarenka/test1/MemoryError2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/memory.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="569" column="6" selection-start-line="569" selection-start-column="6" selection-end-line="569" selection-end-column="6" />
+          <folding>
+            <element signature="e#12720#12721#0" expanded="true" />
+            <element signature="e#12790#12791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/main/java/com/azarenka/PaintDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/main/java/com/azarenka/PaintPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="200" column="44" lean-forward="true" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
+          <folding>
+            <element signature="e#2047#2048#0" expanded="true" />
+            <element signature="e#2083#2084#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+            <element signature="e#2988#2989#0" expanded="true" />
+            <element signature="e#5696#5697#0" expanded="true" />
+            <element signature="e#5735#5736#0" expanded="true" />
+            <element signature="e#5937#5938#0" expanded="true" />
+            <element signature="e#5967#5968#0" expanded="true" />
+            <element signature="e#6978#6979#0" expanded="true" />
+            <element signature="e#7008#7009#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/downloader/src/main/java/com/azarenka/Download.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/downloader/src/main/java/com/azarenka/ProgressRender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/downloader/src/main/java/com/azarenka/DownloadTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/downloader/src/main/java/com/azarenka/DownloadManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#756#918#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
           </folding>
         </state>
       </provider>

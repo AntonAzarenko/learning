@@ -23,6 +23,9 @@
         <module>collection</module>
         <module>generics</module>
         <module>multithreading</module>
+        <module>memory</module>
+        <module>downloader</module>
+        <module>swing</module>
     </modules>
 
     <properties>

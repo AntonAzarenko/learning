@@ -805,7 +805,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="multithreading" />
+        <module name="downloader" />
         <module name="javaIO" />
+        <module name="memory" />
+        <module name="swing" />
         <module name="annotation" />
         <module name="sql-domain" />
         <module name="generics" />
@@ -815,11 +818,14 @@
     <bytecodeTargetLevel>
       <module name="annotation" target="1.8" />
       <module name="collection" target="1.8" />
+      <module name="downloader" target="1.8" />
       <module name="generics" target="1.8" />
       <module name="javaIO" target="1.8" />
       <module name="learning" target="1.8" />
+      <module name="memory" target="1.8" />
       <module name="multithreading" target="1.8" />
       <module name="sql-domain" target="1.8" />
+      <module name="swing" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
@@ -1287,10 +1293,13 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/annotation" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/collection" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/downloader" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/generics" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaIO" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memory" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/multithreading" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sql-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swing" charset="UTF-8" />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="PRINT_LINE_NUMBERS" value="false" />
@@ -1322,10 +1331,13 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="annotation" options="-parameters" />
       <module name="collection" options="-parameters" />
+      <module name="downloader" options="-parameters" />
       <module name="generics" options="-parameters" />
       <module name="javaIO" options="-parameters" />
+      <module name="memory" options="-parameters" />
       <module name="multithreading" options="-parameters" />
       <module name="sql-domain" options="-parameters" />
+      <module name="swing" options="-parameters" />
     </option>
   </component>
   <component name="JavadocGenerationManager">
@@ -1540,11 +1552,14 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/collection/collection.iml" filepath="$PROJECT_DIR$/collection/collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/downloader/downloader.iml" filepath="$PROJECT_DIR$/downloader/downloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/generics/generics.iml" filepath="$PROJECT_DIR$/generics/generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaIO/javaIO.iml" filepath="$PROJECT_DIR$/javaIO/javaIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning.iml" filepath="$PROJECT_DIR$/learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memory/memory.iml" filepath="$PROJECT_DIR$/memory/memory.iml" />
       <module fileurl="file://$PROJECT_DIR$/multithreading/multithreading.iml" filepath="$PROJECT_DIR$/multithreading/multithreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/sql-domain/sql-domain.iml" filepath="$PROJECT_DIR$/sql-domain/sql-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swing/swing.iml" filepath="$PROJECT_DIR$/swing/swing.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
