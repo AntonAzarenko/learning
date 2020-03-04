@@ -18,7 +18,7 @@
         <commons.lang3.version>3.8.1</commons.lang3.version>
         <start-class>com.azarenka.Application</start-class>
         <spring.boot.mybatis>1.3.2</spring.boot.mybatis>
-        <jackson.annotations.version>2.9.7</jackson.annotations.version>
+        <jackson.annotations.version>2.9.10.3</jackson.annotations.version>
         <postgresql.driver.version>42.2.5</postgresql.driver.version>
         <start-class>com.azarenka.Application</start-class>
         <java.version>1.8</java.version>
